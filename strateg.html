@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Стратег — Васильева Анна</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="stage-outer">
+<div class="stage page-bg-wrap">
+  <img class="page-bg" src="https://www.figma.com/api/mcp/asset/6499aa05-4226-4b48-b867-9adc54ad5a22" alt="Стратег">
+
+  <!-- header hotspots -->
+  <a class="hotspot" href="index.html" style="left:70px;top:49px;width:316px;height:50px;"></a>
+  <a class="hotspot" href="creator.html" style="left:713px;top:48px;width:151px;height:43px;"></a>
+  <a class="hotspot" href="strateg.html" style="left:874px;top:48px;width:153px;height:41px;"></a>
+  <a class="hotspot" href="marketplace.html" style="left:1037px;top:48px;width:329px;height:41px;"></a>
+
+  <!-- case buttons -> google drive -->
+  <a class="hotspot link-btn" data-case="perekrestok" href="#" style="left:941px;top:1376px;width:426px;height:60px;"></a>
+  <a class="hotspot link-btn" data-case="lichi" href="#" style="left:20px;top:2065px;width:441px;height:30px;"></a>
+  <a class="hotspot link-btn" data-case="pmkl" href="#" style="left:918px;top:2716px;width:426px;height:60px;"></a>
+  <a class="hotspot link-btn" data-case="animals" href="#" style="left:20px;top:3404px;width:441px;height:30px;"></a>
+
+  <!-- footer nav -->
+  <a class="hotspot" href="index.html" style="left:106px;top:3534px;width:210px;height:40px;"></a>
+  <a class="hotspot" href="creator.html" style="left:627px;top:3534px;width:210px;height:40px;"></a>
+  <a class="hotspot" href="marketplace.html" style="left:1047px;top:3521px;width:279px;height:80px;"></a>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+  const DRIVE_FOLDER = "https://drive.google.com/drive/u/0/folders/1ek5gofIr4lFpEWqnCNiaAn6spKAPLZX9";
+  document.querySelectorAll('.link-btn').forEach(a=>{
+    a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      window.open(DRIVE_FOLDER, '_blank');
+    });
+  });
+</script>
+</body>
+</html>

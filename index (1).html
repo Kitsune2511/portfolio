@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Васильева Анна — портфолио</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="stage-outer">
+<div class="stage">
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Васильева Анна</a>
+    <div class="avatar-dot"><img src="https://www.figma.com/api/mcp/asset/e1891d94-2ef6-4d96-b8e2-906ad0c0e48d" alt=""></div>
+    <a class="nav-pill nav-creator" href="creator.html">креатор</a>
+    <a class="nav-pill nav-strateg" href="strateg.html">стратег</a>
+    <a class="nav-pill nav-market" href="marketplace.html">менеджер маркетплейсов</a>
+  </header>
+
+  <div class="ribbon-wrap" style="height:150px;">
+    <div class="ribbon" id="ribbonTop" style="top:20px;"></div>
+  </div>
+
+  <section class="hero-section">
+    <div class="hero-card">
+      <p class="hero-headline">Креатив — это не про красивые картинки. Это про решения.</p>
+      <p class="hero-copy">Я учусь, пробую, ошибаюсь и нахожу неочевидные ходы. В этом портфолио — мои учебные проекты, где каждая работа начиналась с вопроса «А что, если...?»<br><br>Здесь нет громких кейсов. Зато есть свежий взгляд, энергия и желание создавать то, что работает.</p>
+      <div class="hero-buttons">
+        <a class="pill-btn pill-strateg" href="strateg.html">стратег</a>
+        <a class="pill-btn pill-creator" href="creator.html">креатор</a><br>
+        <a class="pill-btn pill-market" href="marketplace.html">менеджер маркетплейсов</a>
+      </div>
+      <div class="hi-bubble"><span>привет</span></div>
+    </div>
+    <img class="hero-photo" src="https://www.figma.com/api/mcp/asset/e1891d94-2ef6-4d96-b8e2-906ad0c0e48d" alt="Анна Васильева">
+    <p class="hero-name">Васильева Анна</p>
+  </section>
+
+  <section class="numbers-row">
+    <div class="col col-1"><div class="big" style="color:var(--orange);">3</div><div class="cap">профиля в одном</div></div>
+    <div class="col col-2"><div class="big" style="color:var(--pink);">ВШЭ</div><div class="cap">бакалавриат «Стратегия и продюсирование в коммуникациях»</div></div>
+    <div class="col col-3"><div class="big" style="color:var(--lime);-webkit-text-stroke:2px #000;">опыт</div><div class="cap">работы и стажировки</div></div>
+  </section>
+
+  <div class="ribbon-wrap" style="height:150px;">
+    <div class="ribbon tilt-r" id="ribbonBottom" style="top:10px;"></div>
+  </div>
+
+  <section class="toolkit">
+    <h2>мой инструментарий</h2>
+    <div class="toolkit-zone">
+      <div class="tool-pill" style="left:49px;top:0px;width:260px;height:77px;background:var(--blue);animation-delay:0s;">Canva</div>
+      <div class="tool-pill" style="left:592px;top:0px;width:260px;height:77px;background:var(--pink);animation-delay:.6s;">Tilda</div>
+      <div class="tool-pill" style="left:1130px;top:0px;width:260px;height:77px;background:var(--orange);animation-delay:1.2s;">AI</div>
+      <div class="tool-pill" style="left:154px;top:183px;width:469px;height:77px;background:var(--olive);animation-delay:1.8s;">Power Point</div>
+      <div class="tool-pill" style="left:812px;top:183px;width:469px;height:77px;background:var(--red);animation-delay:2.4s;">Adobe Illustrator</div>
+      <div class="tool-ball"></div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <p class="contact-title">поработаем вместе</p>
+    <div class="contact-card"></div>
+    <div class="contact-item" style="top:170px;"><img class="contact-avatar" src="https://www.figma.com/api/mcp/asset/e1891d94-2ef6-4d96-b8e2-906ad0c0e48d">@Kitsune_58</div>
+    <div class="contact-item" style="top:320px;"><img class="contact-avatar" src="https://www.figma.com/api/mcp/asset/e1891d94-2ef6-4d96-b8e2-906ad0c0e48d">Annav251104@gmail.com</div>
+    <div class="contact-item" style="top:460px;"><img class="contact-avatar" src="https://www.figma.com/api/mcp/asset/e1891d94-2ef6-4d96-b8e2-906ad0c0e48d">+7 (985) 417-46-68</div>
+  </section>
+
+</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+  buildMarquee(document.getElementById('ribbonTop'), ['креатор','стратег','менеджер маркетплейсов']);
+  buildMarquee(document.getElementById('ribbonBottom'), ['стратегия','дизайн','аналитика','брендинг']);
+</script>
+</body>
+</html>

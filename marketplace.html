@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Менеджер маркетплейсов — Васильева Анна</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="stage-outer">
+<div class="stage page-bg-wrap">
+  <img class="page-bg" src="https://www.figma.com/api/mcp/asset/3ad0de29-84d9-46ef-9c53-f33a13a28ff5" alt="Менеджер маркетплейсов">
+
+  <!-- header hotspots -->
+  <a class="hotspot" href="index.html" style="left:70px;top:49px;width:316px;height:50px;"></a>
+  <a class="hotspot" href="creator.html" style="left:713px;top:48px;width:151px;height:43px;"></a>
+  <a class="hotspot" href="strateg.html" style="left:874px;top:48px;width:153px;height:41px;"></a>
+  <a class="hotspot" href="marketplace.html" style="left:1037px;top:48px;width:329px;height:41px;"></a>
+
+  <!-- case buttons -> google drive -->
+  <a class="hotspot link-btn" href="#" style="left:582px;top:1398px;width:441px;height:30px;"></a>
+  <a class="hotspot link-btn" href="#" style="left:20px;top:2065px;width:441px;height:30px;"></a>
+
+  <!-- certificate hotspots -> open lightbox -->
+  <div class="hotspot cert-thumb" data-full="https://www.figma.com/api/mcp/asset/d1eb9cee-442f-4398-a3a2-31715bbb8d54" style="left:51px;top:3000px;width:327px;height:463px;"></div>
+  <div class="hotspot cert-thumb" data-full="https://www.figma.com/api/mcp/asset/6623b4a8-2b54-4e9a-891b-fe0c848b0128" style="left:388px;top:3000px;width:327px;height:463px;"></div>
+  <div class="hotspot cert-thumb" data-full="https://www.figma.com/api/mcp/asset/6cb9c41d-947b-4ad5-b08e-7126c363ce8e" style="left:725px;top:3000px;width:327px;height:463px;"></div>
+  <div class="hotspot cert-thumb" data-full="https://www.figma.com/api/mcp/asset/a3e0c461-c2be-424f-b8d4-64460563e81e" style="left:1062px;top:3000px;width:327px;height:463px;"></div>
+
+  <!-- footer nav -->
+  <a class="hotspot" href="index.html" style="left:106px;top:3534px;width:210px;height:40px;"></a>
+  <a class="hotspot" href="creator.html" style="left:670px;top:3534px;width:125px;height:40px;"></a>
+  <a class="hotspot" href="strateg.html" style="left:1106px;top:3534px;width:116px;height:40px;"></a>
+</div>
+</div>
+
+<div class="cert-modal" id="certModal">
+  <div class="cert-close">✕</div>
+  <img src="" alt="Сертификат">
+</div>
+
+<script src="js/script.js"></script>
+<script>
+  const DRIVE_FOLDER = "https://drive.google.com/drive/u/0/folders/1ek5gofIr4lFpEWqnCNiaAn6spKAPLZX9";
+  document.querySelectorAll('.link-btn').forEach(a=>{
+    a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      window.open(DRIVE_FOLDER, '_blank');
+    });
+  });
+</script>
+</body>
+</html>

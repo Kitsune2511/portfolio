@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Креатор — Васильева Анна</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="stage-outer">
+<div class="stage">
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Васильева Анна</a>
+    <a class="nav-pill nav-creator active" href="creator.html">креатор</a>
+    <a class="nav-pill nav-strateg" href="strateg.html">стратег</a>
+    <a class="nav-pill nav-market" href="marketplace.html">менеджер маркетплейсов</a>
+  </header>
+
+  <section class="creator-hero">
+    <h1>Креатор</h1>
+    <p>Брендбуки, раскадровки, постеры, мерч — там, где стратегия превращается в осязаемый образ.</p>
+  </section>
+
+  <h2 class="section-title">Натти: брендбук арахисовой пасты</h2>
+  <div class="project-block">
+    <div class="project-cover" style="display:flex;align-items:center;justify-content:center;background:var(--lime);font-weight:800;font-size:22px;text-align:center;padding:20px;">NATTI<br>брендбук</div>
+    <div class="project-info">
+      <p>Брендбук арахисовой пасты с нуля — от инсайта уставшей мамы и персонажа-белки до упаковки, tone of voice и принципов коммуникации.</p>
+      <div class="tags"><span class="tag">#брендбук</span><span class="tag">#маскот</span><span class="tag">#упаковка</span><span class="tag">#TOV</span></div>
+      <a class="case-link link-btn" href="#">посмотреть кейс →</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">Выпускной журнал ВШЭ</h2>
+  <p style="max-width:1100px;margin:0 auto 30px;padding:0 54px;font-size:18px;line-height:1.6;">Вёрстка реального выпускного журнала программы СПК ВШЭ 2026 года выпуска: индивидуальная фотосъёмка, ретушь с использованием ИИ и вёрстка под настроение каждого героя — под руководством Алексея Никишина.</p>
+  <div class="yearbook-wrap" id="yearbook">
+    <div class="yearbook-page" style="z-index:5;"><img src="https://www.figma.com/api/mcp/asset/20141b09-7c54-4256-822f-77d46a156897"></div>
+    <div class="yearbook-page" style="z-index:4;"><img src="https://www.figma.com/api/mcp/asset/d41f0666-4a5c-4b2d-ac0f-0e8d91a26d8d"></div>
+    <div class="yearbook-page" style="z-index:3;"><img src="https://www.figma.com/api/mcp/asset/29498fdd-bc71-4909-99ba-5fcb0f1e3e86"></div>
+    <div class="yearbook-page" style="z-index:2;"><img src="https://www.figma.com/api/mcp/asset/666311dd-5604-4b7c-92dd-379e8ca865aa"></div>
+    <div class="yearbook-page" style="z-index:1;"><img src="https://www.figma.com/api/mcp/asset/a5f6de2f-9ba2-4ab8-a888-e50d31be4dc3"></div>
+  </div>
+  <div class="yearbook-controls">
+    <div class="yb-btn" id="ybPrev">‹</div>
+    <div class="yb-counter" id="ybCounter">1 / 5</div>
+    <div class="yb-btn" id="ybNext">›</div>
+  </div>
+
+  <h2 class="section-title">Запоминающееся оформление през</h2>
+  <div class="pres-scroll-wrap">
+    <div class="pres-track" id="presTrack"></div>
+  </div>
+
+  <h2 class="section-title">Посты для социальных сетей</h2>
+  <div class="phone-section">
+    <div class="phone-mockup">
+      <div class="phone-notch"></div>
+      <div class="phone-screen" id="phoneScreen">
+        <div class="phone-slide active" style="background:linear-gradient(160deg,var(--pink),var(--orange));"><div>Карусель постов<br>для соцсетей<br><small>слайд 1</small></div></div>
+        <div class="phone-slide" style="background:linear-gradient(160deg,var(--lime),var(--olive));"><div style="color:#111;">Дизайн карточек<br>и коллабораций<br><small>слайд 2</small></div></div>
+        <div class="phone-slide" style="background:linear-gradient(160deg,var(--blue),var(--pink));"><div>Тон коммуникации<br>бренда<br><small>слайд 3</small></div></div>
+        <div class="phone-slide" style="background:linear-gradient(160deg,var(--red),var(--orange));"><div>Визуальный стиль<br>публикаций<br><small>слайд 4</small></div></div>
+        <div class="phone-slide" style="background:linear-gradient(160deg,var(--ink),var(--blue));"><div>Сторителлинг<br>в ленте<br><small>слайд 5</small></div></div>
+        <div class="phone-dots">
+          <span class="active"></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="text-align:center;font-size:14px;opacity:.55;padding-bottom:40px;">* здесь показаны демо-слайды — замените на реальные посты из фрейма «Посты для социальных сетей»</p>
+
+  <nav class="site-footer-nav">
+    <a href="index.html">на главную</a>
+    <a href="strateg.html">стратег</a>
+    <a href="marketplace.html">менеджер маркетплейсов</a>
+  </nav>
+
+</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+  const presImgs = [
+    "https://www.figma.com/api/mcp/asset/0e1853ee-f800-4d77-8414-19271967ed5e",
+    "https://www.figma.com/api/mcp/asset/2a3825af-658f-4aa1-bf1e-930905d14df6",
+    "https://www.figma.com/api/mcp/asset/ebe6308d-22d3-4444-9d76-98006327c792",
+    "https://www.figma.com/api/mcp/asset/3b1212b3-727d-4d8b-9c5f-15958cf337d6",
+    "https://www.figma.com/api/mcp/asset/e948f1ae-28c6-479e-add0-c44bc050c899",
+    "https://www.figma.com/api/mcp/asset/06224943-3b4c-48c0-a793-3048eee41a8f"
+  ];
+  const track = document.getElementById('presTrack');
+  track.innerHTML = presImgs.concat(presImgs).map(s=>`<img src="${s}">`).join('');
+
+  const DRIVE_FOLDER = "https://drive.google.com/drive/u/0/folders/1ek5gofIr4lFpEWqnCNiaAn6spKAPLZX9";
+  document.querySelectorAll('.link-btn').forEach(a=>{
+    a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      window.open(DRIVE_FOLDER, '_blank');
+    });
+  });
+</script>
+</body>
+</html>
